@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pet Details - PetMatch</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+  <header>
+    <h1>PetMatch</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="search.html">Search</a>
+    </nav>
+  </header>
+  
+  <main class="pet-details-container">
+    <div id="pet-loading">Loading pet details...</div>
+    <div id="pet-content" class="hidden">
+      <div class="pet-gallery">
+        <div class="swiper-container">
+          <div class="swiper-wrapper" id="pet-photos"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      
+      <div class="pet-info">
+        <h2 id="pet-name"></h2>
+        <div class="pet-meta">
+          <span id="pet-breed"></span>
+          <span id="pet-age"></span>
+          <span id="pet-gender"></span>
+        </div>
+        <p id="pet-location"></p>
+        
+        <div class="pet-description">
+          <h3>About Me</h3>
+          <p id="pet-description"></p>
+        </div>
+        
+        <div class="shelter-info">
+          <h3>Shelter Information</h3>
+          <div id="shelter-details"></div>
+        </div>
+        
+        <button id="contact-btn">Contact Shelter</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="pet-details.js"></script>
+</body>
+</html>

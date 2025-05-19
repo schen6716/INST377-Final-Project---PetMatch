@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Pets - PetMatch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>PetMatch</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="search.html">Search</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="search-filters">
+            <h2>Find Your Perfect Match</h2>
+            <div class="filters">
+                <select id="pet-type">
+                    <option value="">All Types</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                </select>
+                <input type="text" id="location" placeholder="Zip code or city">
+                <button id="apply-filters">Search</button>
+            </div>
+        </section>
+        
+        <section class="search-results">
+            <div id="map" style="height: 300px;"></div>
+            <div id="pets-container" class="pet-grid"></div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

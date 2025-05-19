@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PetMatch - Find Your Purrfect Pet!</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>PetMatch</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="search.html">Search</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h2>Find Your Purrfect Pet</h2>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search by breed, location...">
+                <button id="search-btn">Search</button>
+            </div>
+        </section>
+        
+        <section class="featured-pets">
+            <h3>Featured Pets</h3>
+            <div id="featured-pets-container" class="pet-grid"></div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
